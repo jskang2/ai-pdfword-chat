@@ -1,11 +1,11 @@
-# Streamlit으로 RAG 시스템 구축하기
+# Streamlit으로 RAG 시스템 구축하기 복사후 변형
 # 
 # https://www.youtube.com/watch?v=xYNYNKJVa4E&t=822s
 # https://github.com/HarryKane11/langchain/tree/main
 
 # pip install pysqlite3-binary langchain chromadb unstructured sentence-transformers faiss-cpu tiktoken openai pypdf loguru docx2txt langchain-openai python-dotenv
 
-
+# 개발환경 : Python 3.11
 
 import streamlit as st
 import tiktoken
@@ -38,7 +38,7 @@ import os
 
 os.environ["LANGCHAIN_TRACING_V2"]="true"                              # LangSmith tracing 하기
 os.environ["LANGCHAIN_ENDPOINT"]="https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"]="ls__05992a0a44c744a5b3a618b690b31f9b"  # LangSmith(smith.langchain.com) API Key
+# os.environ["LANGCHAIN_API_KEY"]=""  # LangSmith(smith.langchain.com) API Key
 os.environ["LANGCHAIN_PROJECT"] = "langchain-study"    # 디버깅을 위한 프로젝트명을 기입합니다.
 # *********************************************************************************************
 
